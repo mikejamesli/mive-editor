@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Chat from "./pages/Chat";
+import Home from "./pages/Home";
 import { Router } from "@reach/router";
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Chat path="/" />
+          <Home path="/" />
         </Router>
       </div>
     );

@@ -37,10 +37,10 @@
     "sequelize": "^4.38.0"
   },
   "scripts": {
-    "dev": "NODE_PATH=.:node_modules nodemon -r esm server.js",
+    "dev": "nodemon -r esm server.js",
     "start": "NODE_ENV=production node -r esm server.js",
     "build": "react-scripts build",
-    "dev-fe": "PORT=3001 react-scripts start"
+    "dev-fe": "react-scripts start"
   },
   "devDependencies": {
     "eslint": "^5.3.0",

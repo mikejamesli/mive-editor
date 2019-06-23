@@ -1,0 +1,61 @@
+{
+  "name": "mive-editor",
+  "version": "1.0.0",
+  "description": "To manage posts",
+  "main": "server.js",
+  "author": "Michael Li Yan Hui",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "@koa/cors": "^2.2.3",
+    "@reach/router": "^1.2.1",
+    "esm": "^3.2.25",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.0",
+    "koa": "^2.5.1",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-combine-routers": "^4.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-sendfile": "^2.0.1",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "mysql2": "^1.5.3",
+    "nookies": "^1.1.1",
+    "object-hash": "^1.3.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.1.0",
+    "react-scripts": "2.0.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.2",
+    "sequelize": "^4.38.0"
+  },
+  "scripts": {
+    "dev": "NODE_PATH=.:node_modules nodemon -r esm server.js",
+    "start": "NODE_ENV=production node -r esm server.js",
+    "build": "react-scripts build",
+    "dev-fe": "PORT=3001 react-scripts start"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.11.0",
+    "nodemon": "^1.18.10",
+    "prettier-eslint": "^8.8.2",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

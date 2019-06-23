@@ -1,0 +1,28 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:8.0.12
+    command: --default-authentication-plugin=mysql_native_password --datadir=/var/lib/mysql --user=mysql --server-id=1
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    restart: always
+    ports:
+      - "3306:3306"
+  adminer:
+    image: adminer
+    ports:
+      - "3380:8080"
+    links:
+      - "mysql:db"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=secret"
+    depends_on:
+      - "mysql"
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./data/redis:/data:cached
+    command: |
+      redis-server --appendonly yes

@@ -34,7 +34,7 @@
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-saga": "^0.16.2",
-    "sequelize": "^4.38.0"
+    "sequelize": "^6.28.2"
   },
   "scripts": {
     "dev": "nodemon -r esm server.js",
